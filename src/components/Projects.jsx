@@ -4,24 +4,58 @@ function Projects() {
       <h2 style={styles.heading}>My Projects</h2>
 
       <div style={styles.container}>
+
+        {/* Smart Expense Splitter */}
         <div style={styles.card}>
           <h3>Smart Expense Splitter</h3>
           <p>
             A full stack web application to split and manage group expenses
             efficiently with authentication and real-time calculations.
           </p>
-          <button style={styles.button}>View Project</button>
+
+          <a 
+            href="https://github.com/Nisha26-mudaliar" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={styles.button}>View Project</button>
+          </a>
         </div>
 
+        {/* Brew Haven Cafe */}
         <div style={styles.card}>
-          <h3>SafeConnect</h3>
+          <h3>Brew Haven Cafe</h3>
           <p>
-            Built a social networking platform promoting digital well-being 
-            and safe online interactions.
-            Implemented user authentication and real-time posting.
+            A modern café website built with React featuring animated UI,
+            gallery, interactive menu, cart system and responsive design.
           </p>
-          <button style={styles.button}>View Project</button>
+
+          <a 
+            href="https://github.com/Nisha26-mudaliar/FUTURE_FS_03"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={styles.button}>View Project</button>
+          </a>
         </div>
+
+        {/* Todo App */}
+        <div style={styles.card}>
+          <h3>React Todo App</h3>
+          <p>
+            A task management application built with React allowing users
+            to add, delete and manage daily tasks efficiently.
+          </p>
+
+          <a 
+            href="https://github.com/Nisha26-mudaliar/todo-react-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={styles.button}>View Project</button>
+          </a>
+        </div>
+
       </div>
     </section>
   )

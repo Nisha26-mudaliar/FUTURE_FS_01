@@ -11,8 +11,8 @@ function Hero() {
       </p>
 
       <div style={styles.buttons}>
-        <button style={styles.primaryBtn}>View Projects</button>
-        <button style={styles.secondaryBtn}>Contact Me</button>
+        <a href="#projects" style={styles.primaryBtn}>View Projects</a>
+        <a href="#contact" style={styles.secondaryBtn}>Contact Me</a>
       </div>
     </section>
   )
@@ -49,18 +49,22 @@ const styles = {
     gap: "20px"
   },
   primaryBtn: {
-    padding: "10px 20px",
-    backgroundColor: "#007bff",
-    color: "white",
-    border: "none",
-    cursor: "pointer"
-  },
-  secondaryBtn: {
-    padding: "10px 20px",
-    backgroundColor: "transparent",
-    border: "2px solid #007bff",
-    cursor: "pointer"
-  }
+  padding: "10px 20px",
+  backgroundColor: "#007bff",
+  color: "white",
+  border: "none",
+  cursor: "pointer",
+  textDecoration: "none"
+},
+
+secondaryBtn: {
+  padding: "10px 20px",
+  backgroundColor: "transparent",
+  border: "2px solid #007bff",
+  cursor: "pointer",
+  textDecoration: "none",
+  color: "#007bff"
+}
 }
 
 export default Hero

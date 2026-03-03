@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.15);
+}
