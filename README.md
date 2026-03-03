@@ -26,15 +26,15 @@ A modern responsive personal portfolio website built using React.
 ## 📂 Project Structure
 src/
 ├── components/
-│ ├── Navbar.jsx
-│ ├── Hero.jsx
-│ ├── About.jsx
-│ ├── Skills.jsx
-│ ├── Projects.jsx
-│ ├── Contact.jsx
-│ ├── Footer.jsx
-├── App.jsx
-├── main.jsx
+│  Navbar.jsx
+│  Hero.jsx
+│  About.jsx
+│  Skills.jsx
+│  Projects.jsx
+│  Contact.jsx
+│  Footer.jsx
+├  App.jsx
+├  main.jsx
 
 ## 🔗 GitHub
 
