@@ -42,6 +42,14 @@ Repository Link:
 https://github.com/Nisha26-mudaliar/FUTURE_FS_01
 
 ---
+## 📄 Letter of Recommendation
+
+I received a Letter of Recommendation for successfully completing the 
+Full Stack Web Development Internship at Future Interns.
+
+🔗 View LOR: [Click Here](MUDALIAR NISHA KATHIRAVAN LoR.pdf)
+
+---
 
 ## 👩‍💻 Author
 
