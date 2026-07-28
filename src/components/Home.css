@@ -1,13 +1,13 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height:calc(100vh - 75px);
   background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #111827 100%);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 120px 8%;
-  gap: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  padding:90px 8% 60px;
+  gap: 60px;
   overflow: hidden;
 }
 
@@ -43,9 +43,9 @@
   z-index: 2;
 }
 
-.hero-left {
-  flex: 1;
-  max-width: 520px;
+.hero-left{
+    flex:0 0 48%;
+    max-width:540px;
 }
 
 .hero-right {
@@ -53,6 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0;
 }
 
 /* Availability Badge */
@@ -173,10 +174,10 @@
 
 /* Stats */
 
-.stats {
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
+.stats{
+    display:flex;
+    gap:18px;
+    flex-wrap:nowrap;
 }
 
 .stat {

@@ -1,56 +1,123 @@
+import "./Skills.css";
+
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaBootstrap,
+  FaNodeJs,
+  FaPython,
+  FaJava,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiPostman,
+  SiFlask,
+} from "react-icons/si";
+
+const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "React", icon: <FaReact /> },
+      { name: "HTML5", icon: <FaHtml5 /> },
+      { name: "CSS3", icon: <FaCss3Alt /> },
+      { name: "JavaScript", icon: <FaJsSquare /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Bootstrap", icon: <FaBootstrap /> },
+    ],
+  },
+
+  {
+    title: "Backend",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "Flask", icon: <SiFlask /> },
+      { name: "REST API" },
+      { name: "JWT" },
+    ],
+  },
+
+  {
+    title: "Database",
+    skills: [
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "MySQL", icon: <SiMysql /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+    ],
+  },
+
+  {
+    title: "Programming",
+    skills: [
+      { name: "JavaScript", icon: <FaJsSquare /> },
+      { name: "Python", icon: <FaPython /> },
+      { name: "Java", icon: <FaJava /> },
+      { name: "C++" },
+    ],
+  },
+
+  {
+    title: "Tools",
+    skills: [
+      { name: "Git", icon: <FaGitAlt /> },
+      { name: "GitHub", icon: <FaGithub /> },
+      { name: "VS Code" },
+      { name: "Postman", icon: <SiPostman /> },
+      { name: "npm" },
+    ],
+  },
+
+  {
+    title: "Core Skills",
+    skills: [
+      { name: "OOP" },
+      { name: "Data Structures" },
+      { name: "Algorithms" },
+      { name: "Responsive Design" },
+    ],
+  },
+];
+
 function Skills() {
   return (
-    <section id="skills" style={styles.skills}>
-      <h2 style={styles.heading}>My Skills</h2>
+    <section className="skills" id="skills">
+      <div className="section-header">
+        <p className="section-tag">MY SKILLS</p>
 
-      <div style={styles.container}>
-        <div style={styles.card}>
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React</p>
-        </div>
+        <h2>Technologies I Work With</h2>
 
-        <div style={styles.card}>
-          <h3>Backend</h3>
-          <p>Node.js, Express</p>
-        </div>
+        <div className="underline"></div>
+      </div>
 
-        <div style={styles.card}>
-          <h3>Database</h3>
-          <p>MongoDB, MySQL</p>
-        </div>
+      <div className="skills-grid">
+        {skillCategories.map((category) => (
+          <div className="skill-card" key={category.title}>
+            <h3>{category.title}</h3>
 
-        <div style={styles.card}>
-          <h3>Tools</h3>
-          <p>Git, GitHub, VS Code</p>
-        </div>
+            <div className="skill-list">
+              {category.skills.map((skill) => (
+                <div className="skill-item" key={skill.name}>
+                  <span className="skill-icon">{skill.icon}</span>
+
+                  <span>{skill.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
-  )
+  );
 }
 
-const styles = {
-  skills: {
-    padding: "80px 20px",
-    backgroundColor: "#f5f5f5",
-    textAlign: "center"
-  },
-  heading: {
-    fontSize: "32px",
-    marginBottom: "40px"
-  },
-  container: {
-    display: "flex",
-    justifyContent: "center",
-    flexWrap: "wrap",
-    gap: "20px"
-  },
-  card: {
-    backgroundColor: "white",
-    padding: "20px",
-    width: "200px",
-    borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.1)"
-  }
-}
-
-export default Skills
+export default Skills;
